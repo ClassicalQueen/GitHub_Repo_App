@@ -42,7 +42,7 @@ const RepositoryDetail = () => {
           <div className="flex items-center sm:justify-center ml-4 sm:ml-0">
             <table className="w-full border-collapse border border-blue-500 max-w-xl mt-16 mx-auto">
               <thead>
-                <tr class="bg-blue-500 text-white">
+                <pre></pre><tr class="bg-blue-500 text-white">
                   <th class="py-2 px-4">Description</th>
                   <th class="py-2 px-4">Data</th>
                 </tr>
@@ -154,6 +154,7 @@ const RepositoryDetail = () => {
                   </td>
                 </tr>
               </tbody>
+              <pre></pre>
             </table>
           </div>
           <Link to="/">

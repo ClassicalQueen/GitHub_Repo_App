@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 body{
-  background-color: hsl(200.29, 100%, 20.25%);
+  background-color: black;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* viewport height, to make sure the body takes up the full screen */
+    height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,13 +18,13 @@ input {
     width: 300px;
     text-align: center;
     font-size: 18px;
-    background-color: rgba(245, 245, 245, 0.767);
+    background-color: rgba(245, 245, 245, 0.863);
     border-radius: 5px;
 }
 
 a {
     text-decoration: none;
-    color: rgba(52, 158, 172, 0.904);
+    color: rgb(233, 232, 243);
     font-size: 20px;
 }
 
@@ -57,16 +57,28 @@ button {
     padding: 10px;
     font-size: 18px;
     font-weight: 300;
-    background-color:rgb(14, 157, 240);
+    background-color:rgb(221, 208, 208);
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
+.btn {
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    border: none;
+}
+
+.btn2 {
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+    border: none;
+}
+
 table {
     box-sizing: border-box;
     border: 1px solid #0c0606;
-    background-color: hsl(0, 17%, 71%);
+    background-color: hsl(347, 6%, 71%);
     width: 80%;
     margin: 10px auto;
     text-align: center;
@@ -77,3 +89,15 @@ table {
 .tr-classNAme {
   @apply flex flex-col mb-4
 }
+
+@media (min-width: 640px) {
+    .group {
+      flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .group {
+      flex-direction: column;
+    }
+  }

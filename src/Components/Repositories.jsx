@@ -69,13 +69,15 @@ const repositories = () => {
             href="*"
             className="w-full md:w-auto px-6 py-3 bg-black border-black text-white fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all disabled:opacity-70"
           >
+            
             <div className="relative">
               <div className="flex items-center justify-center h-3 w-3 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 transition-all"></div>
 
               <div className="flex items-center transition-all opacity-1 valid:">
-                <span className="text-sm font-semibold whitespace-nowrap truncate mx-auto">
+                <button class="btn"><span className="text-sm font-semibold whitespace-nowrap truncate mx-auto">
                   Search
                 </span>
+                </button>
               </div>
             </div>
           </a>
@@ -83,16 +85,7 @@ const repositories = () => {
       </div>
 
       <div>
-        <Paginator
-          className="flex gap-4 text-zinc-100 m-5"
-          first={first}
-          rows={rows}
-          totalRecords={repositories.length}
-          onPageChange={(e) => {
-            setFirst(e.first);
-            setRows(e.rows);
-          }}
-        />
+        
         <div>
           {loading ? (
             <p className="text-white">loading...</p>
@@ -108,17 +101,28 @@ const repositories = () => {
                       {repo.name}
                     </h2>
                   </div>
-                  <Link
+                  <button class="btn2"><Link
                     to={`/repository/${repo.id}/`}
                     className="block hover:bg-gray-300 bg-gray-200 text-gray-800 mt-6 rounded p-2 px-6"
                   >
                     Explore
                   </Link>
+                  </button>
                 </div>
               ))}
             </div>
           )}
         </div>
+        <Paginator
+          className="flex gap-4 text-zinc-100 m-5"
+          first={first}
+          rows={rows}
+          totalRecords={repositories.length}
+          onPageChange={(e) => {
+            setFirst(e.first);
+            setRows(e.rows);
+          }}
+        />
       </div>
     </>
   );
