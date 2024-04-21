@@ -1,8 +1,27 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# GitHub Repository Viewer
 
-Currently, two official plugins are available:
+This is a simple React application that fetches and displays GitHub repositories for a specified user. It allows users to search for repositories by name and explore them by clicking on a repository link.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Fetches repositories from the GitHub API.
+- Allows searching for keywords in a specific repository.
+- Pagination support for browsing through multiple repositories.
+- Provides a link to explore each repository.
+
+## Technologies Used
+
+- React
+- React Router
+- PrimeReact (Paginator component)
+- GitHub API
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+ClassicalQueen (https://github.com/ClassicalQueen)
