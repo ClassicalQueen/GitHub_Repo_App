@@ -101,3 +101,34 @@ table {
       flex-direction: column;
     }
   }
+
+  @media (min-width: 640px) {
+    .btn {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .btn {
+      width: 25%;
+    }
+  }
+
+  
+  @media (min-width: 600px) {
+    input {
+      width: 75%;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    input {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    input {
+      width: 33%;
+    }
+  }
