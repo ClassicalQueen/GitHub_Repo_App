@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: hsl(200.29, 100%, 20.25%);
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* viewport height, to make sure the body takes up the full screen */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+input {
+    height: 35px;
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(245, 245, 245, 0.767);
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(52, 158, 172, 0.904);
+    font-size: 20px;
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+}
+
+.group {
+    box-sizing: border-box;
+    border: 1px solid #0c0606;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px auto; 
+    background-color: hsl(346, 100%, 85%);
+    height: 180px;
+    width: 400px;
+}
+.sr-only {
+    font-size: 50px;
+    color: red
+}
+
+p {
+    color: rgb(14, 240, 240);
+    font-size: 30px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    background-color:rgb(14, 157, 240);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+table {
+    box-sizing: border-box;
+    border: 1px solid #0c0606;
+    background-color: hsl(0, 17%, 71%);
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.tr-classNAme {
+  @apply flex flex-col mb-4
+}
