@@ -53,12 +53,11 @@ const repositories = () => {
     <>
       <div>
         
-          <img
-            src="./src/assets/author-photo.jpg"
-            alt="Author's photo"
-            className="author-photo"
-          />
+
           <h3 className="author-name">
+          <img src="./src/assets/author-photo.jpg"
+            />
+
             Desiree Onyinyechi Chukwuji (ClassicalQueen)
           </h3>
           <h4 className="author-description">
