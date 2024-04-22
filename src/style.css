@@ -144,17 +144,33 @@ table a{
   @media (min-width: 600px) {
     input {
       width: 75%;
+      text-align: center;
     }
   }
   
   @media (min-width: 900px) {
     input {
       width: 50%;
+      text-align: center;
     }
   }
   
   @media (min-width: 1200px) {
     input {
       width: 33%;
+      text-align: center;
     }
   }
+
+  @media (max-width: 600px) {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    h3, h4 {
+      text-align: center;
+    }
+  }
+
+  
