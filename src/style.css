@@ -120,19 +120,6 @@ table a{
   text-align: center;
 }
 
-.author-photo {
-  width: 150px;
-  height: 150px;
-}
-
-.author-name {
-  font-size: 1.2em;
-}
-
-.author-description {
-  font-size: 1em;
-}
-
 @media (min-width: 600px) {
   .author-name {
     font-size: 1.5em;
