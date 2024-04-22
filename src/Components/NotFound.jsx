@@ -7,7 +7,7 @@ const NotFound = () => {
       <div class="container flex flex-col items-center ">
         <div class="flex flex-col gap-6 max-w-md text-center">
           <h2 class="font-extrabold text-9xl text-gray-600 dark:text-gray-100">
-            <span class="sr-only">Error 404</span>
+            <span class="sr-only">Error 404!</span>
           </h2>
           <p class="text-2xl md:text-3xl dark:text-gray-300">
             Oops! This page could not be found.
