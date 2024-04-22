@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { Paginator } from "primereact/paginator";
 import { Link } from "react-router-dom";
 
-
 const repositories = () => {
   const [repositories, setRepositories] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -55,7 +54,7 @@ const repositories = () => {
       <div>
         <div className="info-container">
           <img
-            src="./src/assets/Author's-photo.jpg"
+            src="./src/assets/Authors-photo.jpg"
             alt="Author's photo"
             className="author-photo"
           />
