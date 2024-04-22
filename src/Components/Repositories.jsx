@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { Paginator } from "primereact/paginator";
 import { Link } from "react-router-dom";
-import { color } from "@chakra-ui/react";
+
 
 const repositories = () => {
   const [repositories, setRepositories] = useState([]);
@@ -53,11 +53,21 @@ const repositories = () => {
   return (
     <>
       <div>
-        <img src="./src/assets/Author's-photo.jpg" alt="Author's photo" width="100px"/>
-        <h3>Desiree Onyinyechi Chukwuji (ClassicalQueen)</h3>        
-        <h4>Software and web developer<br/>
-          Below are my GitHub repositories
-        </h4>
+        <div className="info-container">
+          <img
+            src="./src/assets/Author's-photo.jpg"
+            alt="Author's photo"
+            className="author-photo"
+          />
+          <h3 className="author-name">
+            Desiree Onyinyechi Chukwuji (ClassicalQueen)
+          </h3>
+          <h4 className="author-description">
+            Software and web developer
+            <br />
+            Below are my GitHub repositories
+          </h4>
+        </div>
         <label
           className="mx-auto mt-40 relative bg-white min-w-sm max-w-2xl flex flex-col md:flex-row items-center justify-center border py-2 px-2 rounded-2xl gap-2 shadow-2xl focus-within:border-gray-300"
           htmlFor="search-bar"
@@ -74,14 +84,14 @@ const repositories = () => {
             href="*"
             className="w-full md:w-auto px-6 py-3 bg-black border-black text-white fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all disabled:opacity-70"
           >
-            
             <div className="relative">
               <div className="flex items-center justify-center h-3 w-3 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 transition-all"></div>
 
               <div className="flex items-center transition-all opacity-1 valid:">
-                <button class="btn"><span className="text-sm font-semibold whitespace-nowrap truncate mx-auto">
-                  Search
-                </span>
+                <button class="btn">
+                  <span className="text-sm font-semibold whitespace-nowrap truncate mx-auto">
+                    Search
+                  </span>
                 </button>
               </div>
             </div>
@@ -106,12 +116,13 @@ const repositories = () => {
                       {repo.name}
                     </h2>
                   </div>
-                  <button class="btn2"><Link
-                    to={`/repository/${repo.id}/`}
-                    className="block hover:bg-gray-300 bg-gray-200 text-gray-800 mt-6 rounded p-2 px-6"
-                  >
-                    Explore
-                  </Link>
+                  <button class="btn2">
+                    <Link
+                      to={`/repository/${repo.id}/`}
+                      className="block hover:bg-gray-300 bg-gray-200 text-gray-800 mt-6 rounded p-2 px-6"
+                    >
+                      Explore
+                    </Link>
                   </button>
                 </div>
               ))}

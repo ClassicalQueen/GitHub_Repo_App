@@ -116,15 +116,49 @@ table a{
   @apply flex flex-col mb-4
 }
 
-@media (min-width: 640px) {
+.info-container {
+  text-align: center;
+}
+
+.author-photo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.author-name {
+  font-size: 1.2em;
+}
+
+.author-description {
+  font-size: 1em;
+}
+
+@media (min-width: 600px) {
+  .author-photo {
+    width: 100px;
+  }
+
+  .author-name {
+    font-size: 1.5em;
+  }
+
+  .author-description {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 600px) {
     .group {
       flex-direction: row;
+      
     }
   }
   
-  @media (min-width: 1024px) {
+  @media (min-width: 900px) {
     .group {
       flex-direction: column;
+      
     }
   }
 
@@ -158,17 +192,6 @@ table a{
   @media (min-width: 1200px) {
     input {
       width: 33%;
-      text-align: center;
-    }
-  }
-
-  @media (max-width: 600px) {
-    img {
-      width: 100px;
-      height: 100px;
-    }
-
-    h3, h4 {
       text-align: center;
     }
   }
