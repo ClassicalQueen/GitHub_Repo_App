@@ -121,9 +121,8 @@ table a{
 }
 
 .author-photo {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+  width: 150px;
+  height: 150px;
 }
 
 .author-name {
@@ -135,10 +134,6 @@ table a{
 }
 
 @media (min-width: 600px) {
-  .author-photo {
-    width: 100px;
-  }
-
   .author-name {
     font-size: 1.5em;
   }
